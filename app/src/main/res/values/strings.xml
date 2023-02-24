@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Majika</string>
+    <string name="majika_label">Majika</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="default_nama">Food X</string>
+    <string name="default_harga">Rp 50.000</string>
+    <string name="default_terjual">100Rb+ SOLD</string>
+    <string name="default_deskripsi">Spicy</string>
+
+    <string name="btn_capture">Capture</string>
+    <string name="btn_take_photo">Take Again</string>
+    <string name="twibbon_warning_no_permissions">Required Camera permission to use this feature</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="image_twibbon">Twibbon</string>
+
+    <string-array name="food_name">
+        <item>Nasgor Juara</item>
+        <item>Burger King</item>
+        <item>Ayam Geprek</item>
+        <item>Ayam Bersih</item>
+        <item>Ayam Bakar</item>
+        <item>Bakso</item>
+        <item>Sushi</item>
+    </string-array>
+
+    <string-array name="food_price">
+        <item>Rp 30.000</item>
+        <item>Rp 40.000</item>
+        <item>Rp 50.000</item>
+        <item>Rp 60.000</item>
+        <item>Rp 70.000</item>
+        <item>Rp 80.000</item>
+        <item>Rp 90.000</item>
+    </string-array>
+
+    <string-array name="terjual_makanan">
+        <item>15RB+ Terjual</item>
+        <item>22RB+ Terjual</item>
+        <item>25RB+ Terjual</item>
+        <item>27RB+ Terjual</item>
+        <item>29RB+ Terjual</item>
+        <item>31RB+ Terjual</item>
+        <item>37RB+ Terjual</item>
+    </string-array>
+
+    <string-array name="food_description">
+        <item>Yummy</item>
+        <item>Crunch</item>
+        <item>Spicy</item>
+        <item>Delicious</item>
+        <item>Crummy</item>
+        <item>Crunch</item>
+        <item>Cold</item>
+    </string-array>
+
+    <string name="default_name_branch">Cabang X</string>
+    <string name="default_popular_food">Food Y</string>
+    <string name="default_address">Lane of Down Street</string>
+    <string name="default_contact_person">Hayabusa</string>
+    <string name="default_phone_number">08123456789</string>
+
+    <string name="menu_item_twibbon">Twibbon</string>
+    <string name="menu_item_branch">Branch</string>
+    <string name="menu_item_menu">Menu</string>
+    <string name="menu_item_cart">Cart</string>
+
+</resources>

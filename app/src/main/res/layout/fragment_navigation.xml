@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationFragment">
+
+    <TextView
+        android:id="@+id/navigationHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#25a5be"
+        android:paddingVertical="16dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentSelectedContainerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="92dp"
+        android:layout_height="58dp"
+        android:background="#25a5be"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="16dp"
+        android:text="Gilang"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentSelectedContainerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragmentSelectedContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationHeader"
+        app:layout_constraintVertical_bias="1.0">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemTextColor="@drawable/nav_color"
+        app:itemIconTint="@drawable/nav_color"
+        app:menu="@menu/bottom_navbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

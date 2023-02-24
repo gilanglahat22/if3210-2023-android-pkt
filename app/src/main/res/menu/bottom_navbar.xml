@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_twibbon"
+        android:background="#25a5be"
+        android:icon="@drawable/baseline_camera_alt_24"
+        android:title="@string/menu_item_twibbon" />
+    <item
+        android:id="@+id/item_branch"
+        android:background="#25a5be"
+        android:icon="@drawable/baseline_location_on_24"
+        android:title="@string/menu_item_branch" />
+    <item
+        android:id="@+id/item_menu"
+        android:background="#25a5be"
+        android:icon="@drawable/outline_restaurant_menu_24"
+        android:title="@string/menu_item_menu"
+        />
+    <item
+        android:id="@+id/item_cart"
+        android:background="#25a5be"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="@string/menu_item_cart" />
+</menu>

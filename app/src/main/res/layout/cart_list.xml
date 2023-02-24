@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="#00BCD4"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/nama_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/default_nama"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/harga_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/default_harga"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/jumlah"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nama_cart" />
+
+            <Button
+                android:id="@+id/add_cart"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="#FFFF"
+                android:textSize="15sp"
+                app:backgroundTint="#154c79"
+                app:cornerRadius="14dp"
+                app:iconSize="10sp"
+                app:layout_constraintEnd_toEndOf="@id/jumlah"
+                app:layout_constraintStart_toEndOf="@id/quantitas_cart"
+                app:layout_constraintTop_toBottomOf="@id/jumlah" />
+
+            <TextView
+                android:id="@+id/quantitas_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@id/add_cart"
+                app:layout_constraintEnd_toStartOf="@+id/add_cart"
+                app:layout_constraintStart_toEndOf="@id/decrease_cart"
+                app:layout_constraintTop_toTopOf="@id/decrease_cart" />
+
+            <Button
+                android:id="@+id/decrease_cart"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="#FFFF"
+                android:textSize="15sp"
+                app:backgroundTint="#154c79"
+                app:cornerRadius="14dp"
+                app:iconSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/quantitas_cart"
+                app:layout_constraintStart_toStartOf="@id/jumlah"
+                app:layout_constraintTop_toBottomOf="@id/jumlah" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:text="Jumlah"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@id/nama_cart"
+                app:layout_constraintStart_toEndOf="@id/harga_cart"
+                app:layout_constraintTop_toBottomOf="@id/nama_cart" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
